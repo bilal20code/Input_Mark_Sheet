@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <center>
+        <h1>Input Mark Sheet</h1>
+        <table border="1px">
+            <tr>
+                <th rowspan="4">S.No</th>
+                <th rowspan="4">Name</th>
+                <th colspan="6">Subject</th>
+                <th rowspan="4">Tatal Max Marks</th>
+                <th rowspan="4">Tatal karen.</th>
+                <th rowspan="4">ToTal Marks</th>
+            </tr>
+            <tr>
+                <th colspan="2">Math</th>
+                <th colspan="2">Urdu</th>
+                <th colspan="2">English</th>
+            </tr>
+            <tr>
+                <th colspan="6">Marks</th>
+            </tr>
+            <tr>
+                <td>Max</td>
+                <td>Secured</td>
+                <td>Max</td>
+                <td>Secured</td>
+                <td>Max</td>
+                <td>Secured</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Bilal</td>
+                <td>100</td>
+                <td><input type="number" id="num1" placeholder="Enter number" ></td>
+                <td>100</td>
+                <td><input type="number" id="num2" placeholder="Enter number" ></td>
+                <td>100</td>
+                <td><input type="number" id="num3" placeholder="Enter number" ></td>
+                <td><input type="text" id="Marks" value="300" style="text-align: center;" disabled></td>
+                <td><button onclick="calculateSum1()">Calculate Sum</button></td>
+                <td><p id="result" style="background-color: yellow;"></p></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Hassan</td>
+                <td>100</td>
+                <td><input type="number" id="num4" placeholder="Enter number"></td>
+                <td>100</td>
+                <td><input type="number" id="num5" placeholder="Enter number"></td>
+                <td>100</td>
+                <td><input type="number" id="num6" placeholder="Enter number"></td>
+                <td><input type="text" id="Marks" value="300" style="text-align: center;" disabled></td>
+                <td><button onclick="calculateSum2()">Calculate Sum</button></td>
+                <td><p id="result2" style="background-color: yellow;"></p></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Hussain</td>
+                <td>100</td>
+                <td><input type="number" id="num7" placeholder="Enter number"></td>
+                <td>100</td>
+                <td><input type="number" id="num8" placeholder="Enter number"></td>
+                <td>100</td>
+                <td><input type="number" id="num9" placeholder="Enter number"></td>
+                <td><input type="text" id="Marks" value="300" style="text-align: center;" disabled></td>
+                <td><button onclick="calculateSum3()">Calculate Sum</button></td>
+                <td><p id="result3" style="background-color: yellow;"></p></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Owais</td>
+                <td>100</td>
+                <td><input type="number" id="num10" placeholder="Enter number"></td>
+                <td>100</td>
+                <td><input type="number" id="num11" placeholder="Enter number"></td>
+                <td>100</td>
+                <td><input type="number" id="num12" placeholder="Enter number"></td>
+                <td><input type="text" id="Marks" value="300" style="text-align: center;" disabled></td>
+                <td><button onclick="calculateSum4()">Calculate Sum</button></td>
+                <td><p id="result4" style="background-color: yellow;"></p></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Raza</td>
+                <td>100</td>
+                <td><input type="number" id="num13" placeholder="Enter number"></td>
+                <td>100</td>
+                <td><input type="number" id="num14" placeholder="Enter number"></td>
+                <td>100</td>
+                <td><input type="number" id="num15" placeholder="Enter number"></td>
+                <td><input type="text" id="Marks" value="300" style="text-align: center;" disabled></td>
+                <td><button onclick="calculateSum5()">Calculate Sum</button></td>
+                <td><p id="result5" style="background-color: yellow;"></p></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Hamza</td>
+                <td>100</td>
+                <td><input type="number" id="num16" placeholder="Enter number"></td>
+                <td>100</td>
+                <td><input type="number" id="num17" placeholder="Enter number"></td>
+                <td>100</td>
+                <td><input type="number" id="num18" placeholder="Enter number"></td>
+                <td><input type="text" id="Marks" value="300" style="text-align: center;" disabled></td>
+                <td><button onclick="calculateSum6()">Calculate Sum</button></td>
+                <td><p id="result6" style="background-color: yellow;"></p></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Asif</td>
+                <td>100</td>
+                <td><input type="number" id="num19" placeholder="Enter number"></td>
+                <td>100</td>
+                <td><input type="number" id="num20" placeholder="Enter number"></td>
+                <td>100</td>
+                <td><input type="number" id="num21" placeholder="Enter number"></td>
+                <td><input type="text" id="Marks" value="300" style="text-align: center;" disabled></td>
+                <td><button onclick="calculateSum7()">Calculate Sum</button></td>
+                <td><p id="result7" style="background-color: yellow;"></p></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Noman</td>
+                <td>100</td>
+                <td><input type="number" id="num22" placeholder="Enter number"></td>
+                <td>100</td>
+                <td><input type="number" id="num23" placeholder="Enter number"></td>
+                <td>100</td>
+                <td><input type="number" id="num24" placeholder="Enter number"></td>
+                <td><input type="text" id="Marks" value="300" style="text-align: center;" disabled></td>
+                <td><button onclick="calculateSum8()">Calculate Sum</button></td>
+                <td><p id="result8" style="background-color: yellow;"></p></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Ajmal</td>
+                <td>100</td>
+                <td><input type="number" id="num25" placeholder="Enter number"></td>
+                <td>100</td>
+                <td><input type="number" id="num26" placeholder="Enter number"></td>
+                <td>100</td>
+                <td><input type="number" id="num27" placeholder="Enter number"></td>
+                <td><input type="text" id="Marks" value="300" style="text-align: center;" disabled></td>
+                <td><button onclick="calculateSum9()">Calculate Sum</button></td>
+                <td><p id="result9" style="background-color: yellow;"></p></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Ahmad</td>
+                <td>100</td>
+                <td><input type="number" id="num28" placeholder="Enter number"></td>
+                <td>100</td>
+                <td><input type="number" id="num29" placeholder="Enter number"></td>
+                <td>100</td>
+                <td><input type="number" id="num30" placeholder="Enter number"></td>
+                <td><input type="text" id="Marks" value="300" style="text-align: center;" disabled></td>
+                <td><button onclick="calculateSum10()">Calculate Sum</button></td>
+                <td><p id="result10" style="background-color: yellow;"></p></td>
+            </tr>
+        </table>
+    </center>
+    
+</body>
+</html>

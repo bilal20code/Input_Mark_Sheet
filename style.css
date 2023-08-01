@@ -1,0 +1,21 @@
+body{
+    background-color: aliceblue;
+}
+h1{
+    text-align: center;
+    color: aquamarine;
+    background-color: darkgreen;
+}
+
+p {
+    text-align: center;
+    /* font-size: larger; */
+}
+
+table{
+    text-align: center;
+}
+
+.abc{
+    background-color: rgb(219, 241, 219);
+}
